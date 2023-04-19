@@ -1,0 +1,17 @@
+
+.title {
+    font-size: 22px;
+}
+
+.img {
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+.icons {
+    display: flex;
+}
+
+.icon {
+    padding: 5px;
+}

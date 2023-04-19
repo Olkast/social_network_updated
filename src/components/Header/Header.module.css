@@ -1,0 +1,22 @@
+
+.header {
+    background-color: #386ac7bd;
+    grid-area: h;
+}
+
+.header img {
+    width: 87px;
+}
+
+.loginBlock {
+    float: right;
+}
+
+.loginBlock a {
+     color: #cedce9;
+
+ }
+
+.registered {
+    float: right;
+}

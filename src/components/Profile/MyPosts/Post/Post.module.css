@@ -1,0 +1,9 @@
+
+.item {
+    color: green;
+    display: flex;
+}
+
+.item img {
+    width: 60px;
+}
