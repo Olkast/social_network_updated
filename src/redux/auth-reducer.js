@@ -57,14 +57,12 @@ export const updateAuthorization = (login, password, setErrors) => (dispatch) =>
     const err = error.response.data.errors.error.issues[0].message
     const messages = err.length > 0 ? err: "Same error";
     setErrors({ login: messages, password: messages})
-    console.log(messages)
   })
 }
 
 export const logout = () => (dispatch) => {
   usersAPI.logout().then(data => {
     if (data.resultCode === 0) {
-      console.log("ddd")
       dispatch(setAuthUserData(null, null, null));
       dispatch(setIsAuth(false))
       document.cookie = `token=${null}; path=/`;
